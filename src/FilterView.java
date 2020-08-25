@@ -43,7 +43,7 @@ public class FilterView extends PApplet {
                 if (drawingLayer != null) {
                     drawingLayer.drawingFilter(this);
                 }
-            } else if (oldFilteredFrame != null){
+            } else if (oldFilteredFrame != null) {
                 image(frame, 0, 0);
                 image(oldFilteredFrame, WEBCAM_WIDTH, 0);
 
@@ -110,7 +110,7 @@ public class FilterView extends PApplet {
         PixelFilter f = null;
         try {
             Class c = Class.forName(name);
-            f = (PixelFilter)c.newInstance();
+            f = (PixelFilter) c.newInstance();
         } catch (Exception e) {
             System.err.println("Something went wrong when loading your filter! " + e.getMessage());
         }
@@ -120,6 +120,10 @@ public class FilterView extends PApplet {
 
     public static void main(String[] args) {
         PApplet.main("FilterView", args);
+    }
+
+    public void mouseReleased() {
+
     }
 }
 
