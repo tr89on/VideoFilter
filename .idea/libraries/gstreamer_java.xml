@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="gstreamer-java">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/gstreamer-java.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
